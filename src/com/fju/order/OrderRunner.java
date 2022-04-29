@@ -16,18 +16,20 @@ public class OrderRunner {
         Delivery sevenEleven = new Seven11Delivery();
         Delivery family = new FamilyDelivery();
         Delivery hiLife = new HiLifeDelivery();
-        Delivery shopee = new ShopeeDelivery();
+       // Delivery shopee = new ShopeeDelivery();
         List<Order> orders = new ArrayList<>();
         orders.add(new Order(700, sevenEleven));
         orders.add(new Order(250, family));
         orders.add(new Order(550, hiLife));
-        orders.add(new Order(220, shopee));
-        orders.add(new Order(130, shopee));
+      //  orders.add(new Order(220, shopee));
+     //   orders.add(new Order(130, shopee));
         System.out.println("金額\t運送\t運費\t小計");
         for (int i = 0; i < orders.size(); i++) {
             Order order = orders.get(i);
             System.out.println(order.amount + "\t" + order.delivery.name + "\t" +
                     order.shipFeed + "\t" + order.total());
         }
+
+
     }
 }
