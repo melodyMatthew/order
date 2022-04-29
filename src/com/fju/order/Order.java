@@ -11,6 +11,16 @@ public class Order {
         this.delivery = delivery;
 
     }
+    public int shipFeed(){
+        return delivery.price;
+    }
+    public int total(){
+        if(delivery instanceof ShopeeDelivery){
+
+        }else{
+            return amount +shipFeed;
+        }
+    }
 
 
 
